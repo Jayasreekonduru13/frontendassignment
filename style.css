@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    height: 100%;
+    margin:0;
+}
+.container{
+    background-color: #2F1893;
+    color: #fff;
+    padding: 30px 160px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.companyDetails{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.header p{
+    font-size: 20px;
+}
+.header li:hover{
+    color:#727276;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border:none;
+    background-color: #ea2c62;
+    color: #fff;
+    font-size: 16px;
+}
+.heroSection{
+    display: flex;
+    justify-content: center;
+    gap:80px;
+    margin-top: 40px;
+}
+.heroDetailsSection{
+    width: 50%;
+}
+.heroDetailsSection h1{
+    font-size: 58px;
+}
+.heroDetailsSection p{
+    font-size: 18px;
+    width: 70%;
+}
+.heroDetailsSection button{
+    border-radius: 18px;
+    margin-top:10px;
+}
+.heroSignupSection{
+    width: 50%;
+    background-color: #fff;
+    color: #9e9d9d;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    
+}
+.heroSignupSection form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    width: 300px;
+}
+.heroSignupSection h1{
+    color: #2F1893;
+    font-size: 34px;
+    text-align: center;
+}
+.emailInput{
+    padding: 10px 20px;
+    border-radius: 18px;
+    outline:none;
+    border:2px solid #a6aaab;
+    font-size: 17px;
+}
+.passwordInput{
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 17px;
+    outline:none;
+    border:2px solid #a6aaab;
+}
+
+.heroSignupSection button{
+    width: 100%;
+}
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+hr{
+    transform: rotate(90deg); 
+    height: 100px;
+}
+.signIn{
+    background-color: #2F1893;
+    border-radius: 19px;
+}
+.login{
+    background-color: #10bdf2;
+    border-radius: 19px;
+}
+span{
+    color:#1da3fc;
+}
+form p{
+    text-align: center;
+}
+
+
+.hide{
+    position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkboxlabel{
+    position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.checkboxlabel:before{
+    content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 0;
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: #50CDBE;
+  border-radius: 3px;
+}
+.checkboxlabel:hover:before{
+    background-color: #727276;
+}
+.checkboxlabel:after{
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.hide:checked + .checkboxlabel:after {
+    opacity: 1;
+  }
